@@ -1,0 +1,26 @@
+﻿@model TranVanDuc_2122110512.Context.Contact
+
+@{
+    ViewBag.Title = "Chi tiết liên hệ";
+}
+
+<div class="content-wrapper">
+    <div>
+        <h4>Thông tin liên hệ</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+            <dd>@Html.DisplayFor(model => model.Name)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.User_id)</dt>
+            <dd>@Html.DisplayFor(model => model.User_id)</dd>
+        </dl>
+    </div>
+
+    <p>
+        @Html.ActionLink("Quay lại danh sách", "Index")
+    </p>
+</div>

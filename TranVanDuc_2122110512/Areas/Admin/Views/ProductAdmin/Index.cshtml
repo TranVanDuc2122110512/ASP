@@ -1,0 +1,80 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<TranVanDuc_2122110512.Context.Product>
+
+@{
+    ViewBag.Title = "Quản lý sản phẩm";
+}
+
+<style>
+    /* CSS Styles */
+</style>
+
+<div class="content-wrapper">
+    <h2>Quản lý sản phẩm</h2>
+
+    <p>
+        @Html.ActionLink("Tạo mới", "Create", null, new { @class = "btn btn-success" })
+    </p>
+
+    @using (Html.BeginForm("Index", "ProductAdmin", FormMethod.Get))
+    {
+        <p>
+            Tìm sản phẩm: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", placeholder = "Tìm kiếm sản phẩm..." })
+            <input type="submit" value="Tìm kiếm" class="btn btn-primary" />
+        </p>
+    }
+
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().ProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Price)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().SKU)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Description)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Image)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Inventory)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Weight)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Dimensions)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Color)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Size)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Material)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Brand.BrandName)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Category.Name)</th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td>@Html.DisplayFor(modelItem => item.SKU)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="~/Content/images/items/@item.Image" alt="Product Image" />
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Inventory)</td>
+                <td>@Html.DisplayFor(modelItem => item.Weight)</td>
+                <td>@Html.DisplayFor(modelItem => item.Dimensions)</td>
+                <td>@Html.DisplayFor(modelItem => item.Color)</td>
+                <td>@Html.DisplayFor(modelItem => item.Size)</td>
+                <td>@Html.DisplayFor(modelItem => item.Material)</td>
+                <td>@Html.DisplayFor(modelItem => item.Brand.BrandName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Category.Name)</td>
+                <td class="action-links">
+                    <a href="@Url.Action("Edit", new { id = item.ProductID })" class="edit-link">Sửa</a>
+                    <a href="@Url.Action("Details", new { id = item.ProductID })" class="details-link">Chi tiết</a>
+                    <a href="@Url.Action("Delete", new { id = item.ProductID })" class="delete-link">Xóa</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchString = ViewBag.CurrentFilter }))
+    </div>
+</div>

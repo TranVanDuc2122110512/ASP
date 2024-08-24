@@ -1,0 +1,228 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<TranVanDuc_2122110512.Context.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .content-wrapper {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+        .content-wrapper h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .table th, .table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+    /* Styling for buttons */
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+    /* Specific styling for Edit, Details, and Delete links */
+    .action-link {
+        padding: 6px 12px;
+        margin-right: 5px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .edit-link {
+        background-color: #007bff;
+    }
+
+        .edit-link:hover {
+            background-color: #0056b3;
+        }
+
+    .details-link {
+        background-color: #28a745;
+    }
+
+        .details-link:hover {
+            background-color: #218838;
+        }
+
+    .delete-link {
+        background-color: #dc3545;
+    }
+
+        .delete-link:hover {
+            background-color: #c82333;
+        }
+
+    /* Styling for pagination */
+    .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        list-style-type: none;
+    }
+
+        .pagination a, .pagination span {
+            margin: 0 5px;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #007bff;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+
+            .pagination a:hover, .pagination a:focus {
+                background-color: #e9ecef;
+                color: #0056b3;
+            }
+
+        .pagination .active span {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+    /* Styling for search input and button */
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .form-group input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group .btn-primary {
+            margin-top: 0;
+        }
+
+    /* Additional spacing for the Create New button */
+    .content-wrapper p {
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="content-wrapper">
+    <h2>Quản lý danh mục</h2>
+
+    <p>
+        @Html.ActionLink("Tạo mới", "Create", null, new { @class = "btn btn-success" })
+    </p>
+
+    <!-- Tìm kiếm -->
+    <form method="get" action="@Url.Action("Index")">
+        <div class="form-group">
+            <input type="text" name="SearchString" value="@ViewBag.CurrentFilter" class="form-control" placeholder="Tìm kiếm theo tên danh mục" />
+            <button type="submit" class="btn btn-primary ml-2">Tìm kiếm</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+            
+                <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Image)</th>
+        
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                   
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>
+                        <img src="~/Content/images/categories/@item.Image" alt="Chưa có ảnh" style="width:150px" />
+                    </td>
+                
+                    <td>
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Chi tiết", "Details", new { id = item.Id }, new { @class = "btn btn-success btn-sm" })
+                        @Html.ActionLink("Xóa", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Phân trang -->
+    <div class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))
+    </div>
+</div>

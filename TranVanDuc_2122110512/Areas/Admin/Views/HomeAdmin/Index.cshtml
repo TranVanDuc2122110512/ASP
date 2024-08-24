@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "Trang Quản Trị";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .content-wrapper {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border-radius: 8px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .card-header {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 1.25rem;
+        }
+
+        .card-title {
+            margin-bottom: 0;
+            color: #495057;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+            .table th {
+                background-color: #f1f3f5;
+                font-weight: 600;
+                color: #495057;
+            }
+
+            .table td {
+                vertical-align: middle;
+            }
+
+        .btn-primary, .btn-success, .btn-warning {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                color: white;
+            }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+                color: white;
+            }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border: none;
+            color: #212529;
+        }
+
+            .btn-warning:hover {
+                background-color: #e0a800;
+                color: #212529;
+            }
+
+        .container-fluid {
+            padding: 0 15px;
+        }
+
+        .table-responsive {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0"><strong>Thống Kê Tổng Quan 📦</strong></h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="container-fluid py-4">
+                                    <div class="table-responsive mb-4">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Tổng số sản phẩm:</strong></td>
+                                                    <td>@ViewBag.TotalProducts</td>
+                                                    <td>@Html.ActionLink("Quản lý sản phẩm", "Index", "ProductAdmin", null, new { @class = "btn btn-primary" })</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Tổng số thương hiệu:</strong></td>
+                                                    <td>@ViewBag.TotalBrand</td>
+                                                    <td>@Html.ActionLink("Quản lý thương hiệu", "Index", "Brand", null, new { @class = "btn btn-primary" })</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Tổng số danh mục:</strong></td>
+                                                    <td>@ViewBag.TotalCategories</td>
+                                                    <td>@Html.ActionLink("Quản lý danh mục", "Index", "CategoryAdmin", null, new { @class = "btn btn-warning" })</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Tổng số đơn hàng:</strong></td>
+                                                    <td>@ViewBag.TotalOrders</td>
+                                                    <td>@Html.ActionLink("Quản lý đơn hàng", "Index", "Order", null, new { @class = "btn btn-primary" })</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Tổng số người dùng:</strong></td>
+                                                    <td>@ViewBag.TotalUsers</td>
+                                                    <td>@Html.ActionLink("Quản lý người dùng", "Index", "User", null, new { @class = "btn btn-success" })</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

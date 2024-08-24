@@ -1,0 +1,38 @@
+﻿@model TranVanDuc_2122110512.Context.Brand
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="content-wrapper">
+    <div>
+        <h4>Thương hiệu</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BrandName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BrandName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Image)
+            </dt>
+            <dd>
+                @if (!string.IsNullOrEmpty(Model.Image))
+                {
+                    <img src="~/Content/images/brands/@Model.Image" alt="Brand Image" style="width:150px" />
+                }
+                else
+                {
+                    <span>Chưa có hình ảnh</span>
+                }
+            </dd>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.BrandID }) |
+        @Html.ActionLink("Quay lại", "Index")
+    </p>
+</div>

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\views\\productadmin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\views\\productadmin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\controllers\\productadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\controllers\\productadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\views\\productadmin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\views\\productadmin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|c:\\users\\tranb\\onedrive\\documents\\zalo received files\\tranvanduc_2122110512\\tranvanduc_2122110512\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB16DFD8-5139-4C96-9C6B-4AFC96AF72E5}|TranVanDuc_2122110512\\TranVanDuc_2122110512.csproj|solutionrelative:tranvanduc_2122110512\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Create.cshtml",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Create.cshtml",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Create.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAmwDoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T11:09:29.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Edit.cshtml",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\ProductAdmin\\Edit.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAmwDcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T10:53:08.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\ProductAdminController.cs",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\ProductAdminController.cs",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\ProductAdminController.cs",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\ProductAdminController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAowJwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:54:27.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:51:15.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T10:49:50.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\tranb\\OneDrive\\Documents\\Zalo Received Files\\TranVanDuc_2122110512\\TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TranVanDuc_2122110512\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAowKkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:43:51.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

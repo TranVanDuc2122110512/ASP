@@ -1,0 +1,43 @@
+﻿@model TranVanDuc_2122110512.Context.Brand
+
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="content-wrapper">
+    <h3>Bạn có chắc chắn muốn xóa?</h3>
+    <div>
+        <h4>Thương hiệu</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BrandName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BrandName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Image)
+            </dt>
+
+            <dd>
+                @if (!string.IsNullOrEmpty(Model.Image))
+                {
+                    <img src="~/Content/images/brands/@Model.Image" alt="Brand Image" style="max-width: 100px;" />
+                }
+            </dd>
+        </dl>
+        @using (Html.BeginForm("Delete", "Brand", FormMethod.Post, new { id = Model.BrandID }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        }
+    </div>
+</div>

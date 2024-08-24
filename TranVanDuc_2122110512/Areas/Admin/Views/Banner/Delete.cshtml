@@ -1,0 +1,66 @@
+﻿@model TranVanDuc_2122110512.Context.Banner
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="content-wrapper">
+    <h3>Bạn có chắc chắn muốn xóa ?</h3>
+    <div>
+        <h4>Banner</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BannerTitle)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BannerTitle)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.BannerImage)
+            </dt>
+            <dd>
+                <img src="~/Content/images/banners/@Model.BannerImage" alt="Banner Image" style="width:150px" />
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.BannerLink)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BannerLink)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StartDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.EndDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.BannerTitle)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BannerTitle)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm("Delete", "Banner", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-default" /> |
+                @Html.ActionLink("Quay lại", "Index")
+            </div>
+        }
+    </div>
+</div>

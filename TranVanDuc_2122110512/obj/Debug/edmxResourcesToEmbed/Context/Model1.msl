@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineShopModelStoreContainer" CdmEntityContainer="OnlineShopEntities1">
+    <EntitySetMapping Name="Register">
+      <EntityTypeMapping TypeName="OnlineShopModel.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="IdUsser" ColumnName="IdUsser" />
+          <ScalarProperty Name="FirtName" ColumnName="FirtName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Passwoord" ColumnName="Passwoord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
